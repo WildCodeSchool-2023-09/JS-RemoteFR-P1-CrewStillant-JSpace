@@ -1,3 +1,8 @@
+:root {
+    --policy-color: #F5FCCD;
+    --baground-color: #35155D;
+} 
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +10,10 @@
 }
 
 nav {
-    display: flex;
-    background-color: 35155D;
-    padding : 1em;
+
+}
+
+footer {
+    color: var(--policy-color);
+    background-color: var(--baground-color);
 }
