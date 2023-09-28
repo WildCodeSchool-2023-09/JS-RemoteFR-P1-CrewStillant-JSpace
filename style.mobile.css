@@ -16,7 +16,7 @@ a{
 body{
     font-size: 1.6rem;
 }
-
+                /* HEADER */
 nav {
     background-color: var(--background-color);
     color: var(--policy-color);
@@ -84,6 +84,7 @@ nav h2 a{
 .firstPart{
     background-image: url("img/default_fond.png");
     background-size: cover;
+    height: 100vh;
 }
 section h1{
     display: flex;
