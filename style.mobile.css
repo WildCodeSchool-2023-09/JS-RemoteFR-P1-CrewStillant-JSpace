@@ -1,6 +1,7 @@
 :root {
     --policy-color: #F5FCCD;
     --baground-color: #35155D;
+    font-size: 62.5%;
 } 
 
 *{
@@ -8,10 +9,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-size: 1.6rem;
+}
 
 nav {
+    background-color: var(--baground-color);
+    color: var(--policy-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 
 }
+/* nav h1{
+    display: flex;
+    align-items: center;
+}
+nav h1::before{
+    content: url("../img/logo.png");
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+} */
 
 footer {
     color: var(--policy-color);
