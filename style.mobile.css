@@ -1,6 +1,6 @@
 :root {
     --policy-color: #F5FCCD;
-    --baground-color: #35155D;
+    --background-color: #35155D;
     font-size: 62.5%;
 } 
 
@@ -18,7 +18,7 @@ body{
 }
 
 nav {
-    background-color: var(--baground-color);
+    background-color: var(--background-color);
     color: var(--policy-color);
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ nav h2 a{
 .popup{
     width: 25rem;
    color: var(--policy-color);
-    background-color: var(--baground-color);
+    background-color: var(--background-color);
     padding: 5rem 5rem;
     display: flex;
     flex-direction: column;
@@ -81,8 +81,44 @@ nav h2 a{
    font-weight: 400;
 }
 
+.firstPart{
+    background-image: url("img/default_fond.png");
+    background-size: cover;
+}
+section h1{
+    display: flex;
+    font-size:2rem ;
+    color: var(--policy-color);
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.informationBarre{
+    display: flex;
+   justify-content: space-between;
+   padding-top: 2rem;
+}
+.informationBarre h2{
+    color: var(--policy-color);
+    background-color: var(--background-color);
+    border-radius: 2rem;
+    padding: 0rem 1rem;
+} 
+.didacticiel{
+    background-color: var(--background-color);
+    border-radius: 1.5rem;
+    color: var(--policy-color);
+    font-size: 1.25rem;
+    padding: 0rem 0.75rem
+}
+.voyage{
+    background-color: var(--background-color);
+    border-radius: 1.5rem;
+    color: var(--policy-color);
+    font-size: 1.25rem;
+    padding: 0rem 0.75rem
+}
 footer {
     color: var(--policy-color);
-    background-color: var(--baground-color);
-    
+    background-color: var(--background-color);
 }
