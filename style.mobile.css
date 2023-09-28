@@ -49,7 +49,42 @@ nav h1::before{
     width: 1.2rem;
     height: 1.2rem;
 } */
-
+.firstPart{
+    background-image: url("img/default_fond.png");
+    background-size: cover;
+}
+section h1{
+    display: flex;
+    font-size:2rem ;
+    color: var(--policy-color);
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.informationBarre{
+    display: flex;
+   justify-content: space-between;
+   padding-top: 2rem;
+}
+.informationBarre h2{
+    color: var(--policy-color);
+    background-color: var(--baground-color);
+    border-radius: 2rem;
+} 
+.didacticiel{
+    background-color: var(--baground-color);
+    border-radius: 1.5rem;
+    color: var(--policy-color);
+    font-size: 1.25rem;
+    padding: 0rem 1rem
+}
+.voyage{
+    background-color: var(--baground-color);
+    border-radius: 1.5rem;
+    color: var(--policy-color);
+    font-size: 1.25rem;
+    padding: 0rem 1rem
+}
 footer {
     color: var(--policy-color);
     background-color: var(--baground-color);
