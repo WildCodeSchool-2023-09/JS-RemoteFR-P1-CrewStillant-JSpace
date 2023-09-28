@@ -1,6 +1,6 @@
 :root {
     --policy-color: #F5FCCD;
-    --baground-color: #35155D;
+    --bagckround-color: #35155D;
     font-size: 62.5%;
 } 
 
@@ -18,7 +18,7 @@ body{
 }
 
 nav {
-    background-color: var(--baground-color);
+    background-color: var(--bagckround-color);
     color: var(--policy-color);
     display: flex;
     justify-content: space-between;
@@ -68,24 +68,25 @@ section h1{
 }
 .informationBarre h2{
     color: var(--policy-color);
-    background-color: var(--baground-color);
+    background-color: var(--bagckround-color);
     border-radius: 2rem;
+    padding: 0rem 1rem;
 } 
 .didacticiel{
-    background-color: var(--baground-color);
+    background-color: var(--bagckround-color);
     border-radius: 1.5rem;
     color: var(--policy-color);
     font-size: 1.25rem;
-    padding: 0rem 1rem
+    padding: 0rem 0.75rem
 }
 .voyage{
-    background-color: var(--baground-color);
+    background-color: var(--bagckround-color);
     border-radius: 1.5rem;
     color: var(--policy-color);
     font-size: 1.25rem;
-    padding: 0rem 1rem
+    padding: 0rem 0.75rem
 }
 footer {
     color: var(--policy-color);
-    background-color: var(--baground-color);
+    background-color: var(--bagckround-color);
 }
