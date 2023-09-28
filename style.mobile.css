@@ -9,6 +9,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: var(--policy-color);
+}
 body{
     font-size: 1.6rem;
 }
@@ -21,6 +25,19 @@ nav {
     align-items: center;
     padding: 1rem;
 
+}
+nav h2{
+    display: flex;
+    align-items: center;
+}
+nav h2 img{
+    width: 3.8rem;
+    height: 3.8rem;
+}
+nav h2 a{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: -1rem;
 }
 /* nav h1{
     display: flex;
