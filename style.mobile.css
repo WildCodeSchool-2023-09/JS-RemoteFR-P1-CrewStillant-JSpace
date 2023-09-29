@@ -51,7 +51,7 @@ nav h2 a{
     border-radius: 3rem;
     position: absolute;
     left: 50%;
-    right: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
     
@@ -88,7 +88,7 @@ nav h2 a{
     border-radius: 3rem;
     position: absolute;
     left: 50%;
-    right: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
 }
@@ -142,6 +142,7 @@ section h1{
 .rocket img{
     max-width: 100%;
     padding-top: 6rem;
+    
 }
 footer {
     color: var(--policy-color);
