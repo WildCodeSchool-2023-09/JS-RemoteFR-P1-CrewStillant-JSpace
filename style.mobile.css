@@ -80,6 +80,26 @@ nav h2 a{
     cursor: pointer;
    font-weight: 400;
 }
+.popup-didacticiel{
+    width: 25rem;
+   color: var(--policy-color);
+    background-color: var(--background-color);
+    padding: 2rem 2rem;
+    border-radius: 3rem;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+.popup-didacticiel p{
+    width: 100%;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+.displayPopup{
+    visibility: visible;
+}
 
 .firstPart{
     background-image: url("img/default_fond.png");

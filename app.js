@@ -1,3 +1,5 @@
+// popup connexion
+
 const popup=document.querySelector(".popup")
 const pseudo=document.querySelector(".pseudo");
 const loading=()=>{
@@ -13,7 +15,8 @@ login.addEventListener("click",()=>{
     const inputValue=input.value;
     pseudo.innerHTML=inputValue;
     popup.style.visibility="hidden";
-    const sayHello= document.querySelector(".pseudo span");
+
+    // const sayHello= document.querySelector(".pseudo span");
     // sayHello.innerHTML="Bonjour "
 
     // setTimeout(()=>{
@@ -21,3 +24,28 @@ login.addEventListener("click",()=>{
     // }, 2000)
 
 });
+
+// nombre de clique sur la fusée.
+
+const rocket=document.querySelector(".rocket img");
+let count=0;
+rocket.addEventListener("click", ()=>{
+    count++;
+    const numberClicque= document.querySelector(".informationBarre h2 span");
+    numberClicque.innerHTML=count;
+})
+
+// clique sur didacticiel
+
+const popupDidacticiel=document.querySelector(".popup-didacticiel");
+const buttonDidacticiel= document.querySelector(".didacticiel");
+buttonDidacticiel.addEventListener("click", ()=>{
+    popupDidacticiel.classList.toggle("displayPopup");
+    
+})
+
+// const body= document.querySelector("body");
+// body.addEventListener("click", ()=>{
+//     popupDidacticiel.style.visibility="hidden"
+
+// })
