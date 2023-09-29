@@ -1,3 +1,28 @@
+:root {
+    --policy-color: #F5FCCD;
+    --background-color: #35155D;
+    font-size: 62.5%;
+}
+
+
 nav{
     background-color: var(#F5FCCD);
+}
+
+
+.team-jspace {
+    background-image: url(image/background_bas.png);
+    background-size: cover;
+    color: var(--policy-color);
+}
+
+footer {
+    color: var(--policy-color);
+    background-color: var(--background-color);
+    
+    position: absolute;
+    width: 100%;
+    height: 5em;
+    bottom: 0;
+    left: 0;
 }
