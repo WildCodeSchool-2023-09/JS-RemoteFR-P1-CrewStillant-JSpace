@@ -53,3 +53,10 @@ const Button = document.createElement ("Button")
 Button.classList.add ("voyage");
 Button.innerHTML = "Voyage"
 Button.appendChild (Button)
+
+const buttonVoyage = document.getElementById ("buttonVoyage");
+const gameBackground = document.getElementById ("gameBackground");
+
+buttonVoyage.addEventListener ("click",() => {
+    const terreBackgroundImage = "url ('image/terre_fond')";
+})
