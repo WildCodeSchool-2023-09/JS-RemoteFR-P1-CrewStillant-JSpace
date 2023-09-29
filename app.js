@@ -50,6 +50,17 @@ buttonDidacticiel.addEventListener("click", ()=>{
 
 // })
 
+Let clickCount = 0
+let backgroundPlanete = [
+    "url ('')",
+    "url ('')",
+    "url ('')",
+    "url ('')",
+    "url ('')",
+    "url ('')",
+    "url ('')",
+]
+
 const buttonVoyage = document.getElementById ("buttonVoyage");
 const gameBackground = document.getElementById ("gameBackground");
 
