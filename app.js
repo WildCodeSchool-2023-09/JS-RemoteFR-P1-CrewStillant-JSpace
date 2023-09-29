@@ -59,4 +59,5 @@ const gameBackground = document.getElementById("gameBackground");
 
 buttonVoyage.addEventListener("click", () => {
   const terreBackgroundImage = "url ('image/terre_fond')";
+  gameBackground.style.backgroundImage = terreBackgroungImage;
 });

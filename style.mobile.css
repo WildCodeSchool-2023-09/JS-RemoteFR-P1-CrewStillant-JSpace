@@ -246,4 +246,9 @@ footer {
   width: 100%;
   height: 3em;
   bottom: 0;
+  text-align: center;
+}
+
+.voyage {
+  background-image: url(image/terre_fond.png);
 }
