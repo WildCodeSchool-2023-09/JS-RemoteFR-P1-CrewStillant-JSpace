@@ -147,6 +147,46 @@ section h1{
 .rocket img:active{
     transform: translateY(-1rem);
 }
+.mulitplicateurs{
+    background-color: lightblue;
+    position: absolute;
+    top: 35%;
+    left: 95%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    opacity: 0.6;
+}
+.multiplicateur{
+    background-color: #0273C5;
+    color: var(--policy-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    padding-right: 3rem ;
+    list-style-type: none;
+    opacity: 0.6;
+    margin: 11rem;
+}
+.multiplicateur ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-start;
+    align-items: center;
+    width: 10rem;
+}
+.multiplicateur img{
+    width: 3rem;
+} 
+ul{ 
+    display: flex;
+    align-items: center;
+}
 footer {
     color: var(--policy-color);
     background-color: var(--background-color);
