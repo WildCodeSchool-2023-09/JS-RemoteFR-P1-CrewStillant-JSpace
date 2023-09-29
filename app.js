@@ -54,6 +54,17 @@ Button.classList.add("voyage");
 Button.innerHTML = "Voyage";
 Button.appendChild(Button);
 
+Let clickCount = 0
+let backgroundPlanete = [
+    "url ('')",
+    "url ('')",
+    "url ('')",
+    "url ('')",
+    "url ('')",
+    "url ('')",
+    "url ('')",
+]
+
 const buttonVoyage = document.getElementById("buttonVoyage");
 const gameBackground = document.getElementById("gameBackground");
 
