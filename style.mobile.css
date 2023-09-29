@@ -1,6 +1,6 @@
 :root {
     --policy-color: #F5FCCD;
-    --bagckround-color: #35155D;
+    --background-color: #35155D;
     font-size: 62.5%;
 } 
 
@@ -16,9 +16,9 @@ a{
 body{
     font-size: 1.6rem;
 }
-
+                /* HEADER */
 nav {
-    background-color: var(--bagckround-color);
+    background-color: var(--background-color);
     color: var(--policy-color);
     display: flex;
     justify-content: space-between;
@@ -29,6 +29,7 @@ nav {
 nav h2{
     display: flex;
     align-items: center;
+    
 }
 nav h2 img{
     width: 3.8rem;
@@ -39,16 +40,47 @@ nav h2 a{
     font-weight: 400;
     margin-left: -1rem;
 }
-/* nav h1{
+.popup{
+    width: 25rem;
+   color: var(--policy-color);
+    background-color: var(--background-color);
+    padding: 5rem 5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    border-radius: 3rem;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    
 }
-nav h1::before{
-    content: url("../img/logo.png");
-    display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem;
-} */
+.popup input{
+    padding: 0.8rem 2rem;
+    margin-bottom: 2rem;
+    outline: 0;
+    border: 0;
+    border-radius: 3rem;
+    background-color: var(--policy-color);
+    color: #35155D;
+    font-size: 1.8rem;
+}
+.popup p{
+    margin:2rem 0;
+    font-size: 2rem;
+}
+.popup button{
+    width: 50%;
+   border-radius: 3rem;
+    padding: 0.5rem;
+    background-color: var(--policy-color);
+    color: #35155D;
+    font-size: 1.8rem;
+    cursor: pointer;
+   font-weight: 400;
+}
+
 .firstPart{
     background-image: url("img/default_fond.png");
     background-size: cover;
@@ -69,19 +101,19 @@ section h1{
 }
 .informationBarre h2{
     color: var(--policy-color);
-    background-color: var(--bagckround-color);
+    background-color: var(--background-color);
     border-radius: 2rem;
     padding: 0rem 1rem;
 } 
 .didacticiel{
-    background-color: var(--bagckround-color);
+    background-color: var(--background-color);
     border-radius: 1.5rem;
     color: var(--policy-color);
     font-size: 1.25rem;
     padding: 0rem 0.75rem
 }
 .voyage{
-    background-color: var(--bagckround-color);
+    background-color: var(--background-color);
     border-radius: 1.5rem;
     color: var(--policy-color);
     font-size: 1.25rem;
@@ -93,5 +125,5 @@ section h1{
 }
 footer {
     color: var(--policy-color);
-    background-color: var(--bagckround-color);
+    background-color: var(--background-color);
 }
