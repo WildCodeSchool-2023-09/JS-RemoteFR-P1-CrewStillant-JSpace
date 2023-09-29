@@ -52,6 +52,7 @@ nav h1::before{
 .firstPart{
     background-image: url("img/default_fond.png");
     background-size: cover;
+    height: 100vh;
 }
 section h1{
     display: flex;
@@ -85,6 +86,10 @@ section h1{
     color: var(--policy-color);
     font-size: 1.25rem;
     padding: 0rem 0.75rem
+}
+.rocket img{
+    max-width: 100%;
+    padding-top: 6rem;
 }
 footer {
     color: var(--policy-color);
