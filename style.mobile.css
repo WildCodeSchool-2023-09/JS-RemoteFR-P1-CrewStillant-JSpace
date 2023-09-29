@@ -142,7 +142,10 @@ section h1{
 .rocket img{
     max-width: 100%;
     padding-top: 6rem;
-    
+    translate: all 0.6s;
+}
+.rocket img:active{
+    transform: translateY(-1rem);
 }
 footer {
     color: var(--policy-color);

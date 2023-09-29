@@ -15,15 +15,10 @@ login.addEventListener("click",()=>{
     const inputValue=input.value;
     pseudo.innerHTML=inputValue;
     popup.style.visibility="hidden";
-
-    // const sayHello= document.querySelector(".pseudo span");
-    // sayHello.innerHTML="Bonjour "
-
-    // setTimeout(()=>{
-    //     sayHello.innerHTML=""
-    // }, 2000)
-
 });
+pseudo.addEventListener("click", ()=>{
+    popup.style.visibility="visible";
+})
 
 // nombre de clique sur la fusée.
 
@@ -40,12 +35,6 @@ rocket.addEventListener("click", ()=>{
 const popupDidacticiel=document.querySelector(".popup-didacticiel");
 const buttonDidacticiel= document.querySelector(".didacticiel");
 buttonDidacticiel.addEventListener("click", ()=>{
-    popupDidacticiel.classList.toggle("displayPopup");
+popupDidacticiel.classList.toggle("displayPopup");
     
 })
-
-// const body= document.querySelector("body");
-// body.addEventListener("click", ()=>{
-//     popupDidacticiel.style.visibility="hidden"
-
-// })
