@@ -21,3 +21,8 @@ login.addEventListener("click",()=>{
     // }, 2000)
 
 });
+
+const slidingMenu=document.querySelector(".sliding_menu");
+const buttonMultiplicateurs=document.querySelector(".mulitplicateurs");
+
+
