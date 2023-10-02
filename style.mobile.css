@@ -143,9 +143,29 @@ section h1{
     max-width: 100%;
     padding-top: 6rem;
     translate: all 0.6s;
+    position: relative;
+    cursor: pointer;
+}
+.rocket span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     visibility: hidden;
+    color:#35155D;
+    font-size: 3rem;
+    font-weight: 700;
+    /* transform: translate(-25%, -25%); */
+    
+    /* transition: all 0.8s; */
+    /* visibility: hidden; */ 
+     
+}
+.cliq{
+    transform: translate(-50%, -50%);
+    transition: all 0.6s;    
 }
 .rocket img:active{
-    transform: translateY(-1rem);
+    transform: translateY(-2rem); 
 }
 .mulitplicateurs{
     background-color: lightblue;
