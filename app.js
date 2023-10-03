@@ -44,3 +44,10 @@ buttonDidacticiel.addEventListener("click", ()=>{
 popupDidacticiel.classList.toggle("displayPopup");
     
 })
+
+const open = querySelector(".mulitplicateurs")
+const menu = querySelector(".multiplicateur")
+
+function w3_open() {
+    document.querySelector(".multiplicateur").style.display = "block";
+  }

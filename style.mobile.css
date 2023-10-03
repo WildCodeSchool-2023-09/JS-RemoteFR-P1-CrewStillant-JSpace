@@ -172,24 +172,24 @@ section h1{
     position: absolute;
     font-size: large;
     top: 35%;
-    left: 95%;
+    left: 92%;
     padding: 1rem;
     border-radius: 1rem;
     border: none;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 .multiplicateur{
     background-color: #0273C5;
     color: var(--policy-color);
     position: absolute;
     top: 15%;
-    left: 71%;
+    left: 33%;
     border-radius: 1rem;
     padding: 1rem;
     gap: 1rem;
     padding-right: 3rem ;
     list-style-type: none;
-    opacity: 0.6;
+    opacity: 0.8;
     margin: 11rem;
 }
 .multiplicateur ul{
@@ -197,12 +197,17 @@ section h1{
     justify-content: center;
     padding-bottom: 1rem;
 }
+.multiplicateur button{
+    background-color: #0273C5;
+    border-style: none;
+}
 .menu{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: flex-start;
+    justify-items: stretch;
     align-items: center;
     width: 10rem;
+    background-color: #0273C5 ;
 }
 .multiplicateur img{
     width: 3rem;
