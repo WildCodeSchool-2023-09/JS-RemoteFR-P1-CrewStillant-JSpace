@@ -49,10 +49,10 @@ const open = document.querySelector(".mulitplicateurs")
 const menu = document.querySelector(".multiplicateur")
 const close = document.querySelector(".close")
 
-open.addEventListener('click', open(){
+open.addEventListener('click', () => {
     document.querySelector(".multiplicateur").style.display = "block";
 });
 
-close.addEventListener("click", close(){
+close.addEventListener("click", () => {
     document.querySelector(".multiplicateur").style.display = "none";
 });
