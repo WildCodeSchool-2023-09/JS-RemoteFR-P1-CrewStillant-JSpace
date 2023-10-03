@@ -21,6 +21,7 @@ pseudo.addEventListener("click", ()=>{
 })
 
 // nombre de clique sur la fusée.
+const addedOne= document.querySelector(".added-one");
 
 const rocket=document.querySelector(".rocket img");
 let count=0;
@@ -28,6 +29,11 @@ rocket.addEventListener("click", ()=>{
     count++;
     const numberClicque= document.querySelector(".informationBarre h2 span");
     numberClicque.innerHTML=count;
+    addedOne.style.visibility="visible";
+    addedOne.classList.add("cliq")
+    setTimeout(()=>{
+        addedOne.style.visibility="hidden";
+    }, 125)
 })
 
 // clique sur didacticiel
