@@ -15,6 +15,12 @@ login.addEventListener("click", () => {
   const inputValue = input.value;
   pseudo.innerHTML = inputValue;
   popup.style.visibility = "hidden";
+const login = document.querySelector(".popup .btn");
+login.addEventListener("click", () => {
+  const input = document.querySelector("#login");
+  const inputValue = input.value;
+  pseudo.innerHTML = inputValue;
+  popup.style.visibility = "hidden";
 });
 pseudo.addEventListener("click", () => {
   popup.style.visibility = "visible";
