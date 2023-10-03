@@ -208,7 +208,222 @@ ul {
   display: flex;
   align-items: center;
 }
+
+
+.Megamaster{
+  position: relative;
+  display: flex;
+  height: 115rem;
+  width: 50rem;
+  background-color: black;
+  background-image: url('./img/background_bas.png');
+  background-size: cover;  /* pour couvrir toute la zone de l'élément */
+  background-repeat: no-repeat; 
+}
+
+.team-jspace {
+  position: absolute;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 1rem;
+}
+.titre{
+  color: white;
+}
+
+.lucinda {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
+}
+
+.lulu{
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
+  color: white;
+
+}
+
+.perso1{
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  top: 12rem;
+  left: 34rem;
+}
+
+
+.bubble-container{
+  position: relative;
+  right: -1rem;
+  top: -2rem;
+
+}
+
+.bubble-text{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 7rem;
+  left: 12rem;
+  width: 19rem;
+}
+
+
+
+
+
+
+
+.julien{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
+}
+
+.juju{
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+  margin-left: -2rem;
+
+}
+
+.perso2{
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  top: 37rem;
+  left: -1rem;
+}
+
+
+.bubble-container2{
+  position: relative;
+  right: 1rem;
+  top: 1rem;
+  transform: scaleX(-1);
+}
+
+
+
+.bubble-text2{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 7rem;
+  left: 9rem;
+  width: 19rem;
+  transform: scaleX(-1);
+}
+
+
+
+
+.vincent {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
+}
+
+.vinvin{
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+  margin-left: 2rem;
+
+}
+
+.perso3{
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  top: 26rem;
+  left: 34rem;
+}
+
+
+.bubble-container3{
+  position: relative;
+  right: 10rem;
+  top: 14rem;
+
+}
+
+.bubble-text3{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 7rem;
+  left: 13rem;
+  width: 19rem;
+}
+
+
+
+
+.serigne {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
+}
+
+.sese{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-left: 0rem;
+
+}
+
+.perso4{
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  top: 26rem;
+  left: -34rem;
+}
+
+
+.bubble-container4{
+  position: relative;
+  right: 46rem;
+  top: 14rem;
+  transform: scaleX(-1);
+
+}
+
+.bubble-text4{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 7rem;
+  left: 10rem;
+  width: 18rem;
+  transform: scaleX(-1);
+
+}
+
+
+
+
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   color: var(--policy-color);
-  background-color: var(--background-color);
+  background-color: purple;
+  
 }
