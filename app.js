@@ -51,10 +51,3 @@ const menu = querySelector(".multiplicateur")
 function w3_open() {
     document.querySelector(".multiplicateur").style.display = "block";
   }
-
-const open = querySelector(".mulitplicateurs")
-const menu = querySelector(".multiplicateur")
-
-function w3_open() {
-    document.querySelector(".multiplicateur").style.display = "block";
-  }
