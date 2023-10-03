@@ -56,19 +56,46 @@ Button.appendChild(Button);
 
 Let clickCount = 0
 let backgroundPlanete = [
-    "url ('')",
-    "url ('')",
-    "url ('')",
-    "url ('')",
-    "url ('')",
-    "url ('')",
-    "url ('')",
-]
+   "URL('/img/terre_fond.png')",
+   "URL('/img/mars_fond.png')",
+   "URL('/img/jupiter_fond.png')",
+   "URL('/img/saturn_fond.png')",
+   "URL('/img/uranus_fond.png')",
+   "URL('/img/neptune_fond.png')",
+   "URL('/img/js_fond.png')",
+];
 
-const buttonVoyage = document.getElementById("buttonVoyage");
-const gameBackground = document.getElementById("gameBackground");
+let changePlanete = [
+    10,20,30,40,50,60,70
+];
 
-buttonVoyage.addEventListener("click", () => {
-  const terreBackgroundImage = "url ('image/terre_fond')";
-  gameBackground.style.backgroundImage = terreBackgroungImage;
-});
+let currentBackgroundIndex = 0;
+
+const voyageButton = document.getElementById ("voyage");
+
+voyageButton.addEventListener ("click",() => {
+    clickCount++;});
+
+function changeBackgroundButton() {
+    if (clickCount === changePlanete [0] ){
+        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[0];
+    }
+    if (clickCount === changePlanete [1] ){
+        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[1];
+    }
+    if (clickCount === changePlanete [2] ){
+        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[2];
+    }
+    if (clickCount === changePlanete [3] ){
+        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[3];
+    }
+    if (clickCount === changePlanete [4] ){
+        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[4];
+    }
+    if (clickCount === changePlanete [5] ){
+        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[5];
+    }
+    if (clickCount === changePlanete [6] ){
+        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[6];
+    }
+}
