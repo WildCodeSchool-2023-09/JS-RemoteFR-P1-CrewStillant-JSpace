@@ -15,11 +15,8 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
-
-    
+        
 }
-
 
 footer {
     margin-top: auto;
@@ -54,296 +51,219 @@ nav h1::before{
 
 /* TITRE "LA TEAM JSPACE" */ 
 
-.team h1 {
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    width: 113%;
-    margin-right: -15px;
-    color: white;
-    margin-top:43px;
-    transform: translateY(20px);
-}
-
-.titre{
-    display: inline;
-    margin-bottom: px;
-}
-
-/* MEGADIVE */
-
-.Megamaster {
-    display: flex;
-    margin-top: 1rem;
-    margin-left: 4rem;
-}
-/* PREMIERE BULLE */ 
-
-.master{
-    display: flex;
-    flex-direction: column;
-    margin-top: -30px;
-    height:10px;
-}
-.bubble-container {
+.Megamaster{
     position: relative;
-    display: inline-block; 
-    width: auto; 
-    
-    height: auto px;
-    margin-left: 31px;
+    display: flex;
+    height: 115rem;
+    width: 50rem;
+    border: solid 2px red;
+    background-color: black;
+    background-image: url('./img/background_bas.png');
+    background-size: cover;  /* pour couvrir toute la zone de l'élément */
+    background-repeat: no-repeat; 
 }
 
-.bubble-image {
-    display: block;
-    max-width: 248px;
-    height: 163;
-    border: ;
-
-}
-
-
-.bubble-text {
+.team-jspace {
     position: absolute;
-    top: 48%; 
-    left: 49%; 
-    transform: translate(-50%, -50%); 
-    color: #000; 
-    text-align: center;
-    height: 
-    width: 30%; 
-   
-    font-size: 1.2rem;
-    
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 1rem;
 }
-
-/* PERSONNAGE LUCINDA */
+.titre{
+    color: white;
+}
 
 .lucinda {
     display: flex;
-    justify-content: end;
-    margin-top: -2.5rem;
-    margin-right: -2.5rem;
-    color: red;
-    border: solid 2px, red;
-    transform: translateX(-10px);
+    justify-content: start;
+    flex-direction: column;
+
 }
 
 .lulu{
     display: flex;
-    justify-content: end;
-    color: white;
-    height: 180%;
-    width: 100%;
-    margin-left: 0.5rem;
+    justify-content: center;
     margin-top: -1rem;
-}
-/* DEUXIEME BULLE */ 
-
-.master2{
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    height:10px;
-}
-
-
-.bubble-container2 {
-    position: relative;
-    display: inline-block; 
-    width: auto; 
-    height: auto px;
-    margin-left: 31px;
-}
-
-.bubble-image2 {
-    display: block;
-    max-width: 248px;
-    height: 132px;
-    transform: translateY(40px) scaleX(-1);
-    margin-top:10px;
-    margin-left:17px;
+    color: white;
 
 }
 
-
-.bubble-text2 {
+.perso1{
     position: absolute;
-    top: 93%;
-    left: 35.5%;
-    transform: translate(-50%, -50%); 
-    text-align: center;
-    height: 10px; 
-    width: 30%; 
-    font-size: 1.2rem;
-    
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    top: 12rem;
+    left: 34rem;
 }
 
-/* PERSONNAGE JULIEN */
 
-.julien {
+.bubble-container{
+    position: relative;
+    right: -1rem;
+    top: -2rem;
+
+}
+
+.bubble-text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 7rem;
+    left: 12rem;
+    width: 19rem;
+}
+
+
+
+
+
+
+
+.julien{
     display: flex;
     justify-content: start;
-    margin-top: -0px;
+    flex-direction: column;
+
 }
 
-.julien {
-    display: flex;
-    flex-direction: start;
-    align-items: center;
-}
 .juju{
     display: flex;
-    margin-bottom: -120px;
-    margin-left: -76px;
-    color: white;
+    justify-content: center;
+    margin-top: 0rem;
+    margin-left: -2rem;
+
 }
 
-
-/* TROISIEME BULLE */ 
-
-.master3 {
+.perso2{
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    margin-top: -30px;
+    justify-content: start;
+    align-items: end;
+    top: 37rem;
+    left: -1rem;
 }
 
-.bubble-container3 {
+
+.bubble-container2{
     position: relative;
-    display: inline-block; 
-    margin-left: 31px;
-}
-
-.bubble-image3 {
-    display: block;
-    max-width: 248px;
-    height: 132px;
-    margin-top: 217px;
-    margin-left: -17px;
+    right: 1rem;
+    top: 1rem;
     transform: scaleX(-1);
 }
 
-.bubble-text3 {
+
+
+.bubble-text2{
     position: absolute;
-    top: 75%;
-    left: 24%;
-    transform: translate(-50%, -50%);
-    color: #000;
-    text-align: center;
-    width: 50%;
-    font-size: 1.2rem;
-    transform: scaleX(1);
+    display: flex;
+    justify-content: center;
+    top: 7rem;
+    left: 9rem;
+    width: 19rem;
+    transform: scaleX(-1);
 }
 
-/* PERSONNAGE VINCENT */
+
+
+
 .vincent {
     display: flex;
-    justify-content: end;
-    margin-top: -35px;
-}
-
-.vincent-img {
-    height: 106px;
-    width: 99px;
-    margin-top: -35px;
-    margin-right: -23px;
-    transform: translateX(-20px);
-}
-
-.vin{
-    display: flex;
-    justify-content: end;
-    color: white;
-    transform: translateX(-16px);
-}
-
-/* QUATRIEME BULLE */ 
-
-.master4 {
-    display: flex;
+    justify-content: start;
     flex-direction: column;
-    margin-top: -30px;
+
 }
 
-.bubble-container4 {
-    position: relative;
-    display: inline-block; 
-    margin-left: 31px;
+.vinvin{
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    margin-left: 2rem;
+
 }
 
-.bubble-image4 {
-    display: block;
-    max-width: 248px;
-    height: 132px;
-    margin-top: -22px;
-    margin-left: 1px;
-    
-}
-
-.bubble-text4 {
+.perso3{
     position: absolute;
-    top:39%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    color: #000;
-    text-align: center;
-    width: 60%;
-    font-size: 1.2rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    top: 26rem;
+    left: 34rem;
 }
 
-/* PERSONNAGE SERIGNE */
+
+.bubble-container3{
+    position: relative;
+    right: 10rem;
+    top: 14rem;
+
+}
+
+.bubble-text3{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 7rem;
+    left: 13rem;
+    width: 19rem;
+}
+
+
+
+
 .serigne {
     display: flex;
     justify-content: start;
-    margin-top: -20px;
-    margin-bottom: 30px;
-    margin-left: 19px;
-    transform: scaleX(1);
-    
+    flex-direction: column;
+
 }
 
 .sese{
-    display:flex;
-    justify-content: start;
-    color: white;
-    margin-top: 77px;
-    margin-left: -73px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 0rem;
+
+}
+
+.perso4{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    top: 26rem;
+    left: -34rem;
 }
 
 
-.Backgroundbas {
-    position: absolute;    
-    bottom: 0;             
-    left: 0;               
-    width: 100%;           
-    z-index: -1;           
+.bubble-container4{
+    position: relative;
+    right: 46rem;
+    top: 14rem;
+    transform: scaleX(-1);
+
 }
 
-.Backgroundbas {
-    width: 150%;  
-    height: auto;
+.bubble-text4{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 7rem;
+    left: 10rem;
+    width: 18rem;
+    transform: scaleX(-1);
+
 }
-
-/* IMAGE DE FOND INFÉRIEURE  */
-
-#background{
-
-    width: 67rem;
-    height: 76rem;
-    background-color: aqua;
-    margin-top:-76.9rem;
-    padding: 0;
-    background-image: url('./img/background_bas.png');
-    background-size: cover;  
-    background-position: center; 
-    background-repeat: no-repeat; 
-    z-index: -1;
-}
-
 
 /* FOOTER */
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     color: var(--policy-color);
     background-color: var(--baground-color);
     
