@@ -15,13 +15,8 @@ login.addEventListener("click", () => {
   const inputValue = input.value;
   pseudo.innerHTML = inputValue;
   popup.style.visibility = "hidden";
-const login = document.querySelector(".popup .btn");
-login.addEventListener("click", () => {
-  const input = document.querySelector("#login");
-  const inputValue = input.value;
-  pseudo.innerHTML = inputValue;
-  popup.style.visibility = "hidden";
 });
+
 pseudo.addEventListener("click", () => {
   popup.style.visibility = "visible";
 });
@@ -55,59 +50,59 @@ buttonDidacticiel.addEventListener("click", () => {
 //     popupDidacticiel.style.visibility="hidden"
 
 // })
-const Button = document.createElement("Button");
-Button.classList.add("voyage");
-Button.innerHTML = "Voyage";
-Button.appendChild(Button);
+// const Button = document.createElement("Button");
+// Button.classList.add("voyage");
+// Button.innerHTML = "Voyage";
+// Button.appendChild(Button);
 
-let clickCount = 0;
-let backgroundPlanete = [
-  "URL('/img/terre_fond.png')",
-  "URL('/img/mars_fond.png')",
-  "URL('/img/jupiter_fond.png')",
-  "URL('/img/saturn_fond.png')",
-  "URL('/img/uranus_fond.png')",
-  "URL('/img/neptune_fond.png')",
-  "URL('/img/js_fond.png')",
-];
+// let clickCount = 0;
+// let backgroundPlanete = [
+//   "URL('/img/terre_fond.png')",
+//   "URL('/img/mars_fond.png')",
+//   "URL('/img/jupiter_fond.png')",
+//   "URL('/img/saturn_fond.png')",
+//   "URL('/img/uranus_fond.png')",
+//   "URL('/img/neptune_fond.png')",
+//   "URL('/img/js_fond.png')",
+// ];
 
-let changePlanete = [10, 20, 30, 40, 50, 60, 70];
+// let changePlanete = [10, 20, 30, 40, 50, 60, 70];
 
-let currentBackgroundIndex = 0;
+// let currentBackgroundIndex = 0;
 
-const voyageButton = document.getElementById("voyage");
+// const voyageButton = document.getElementById("voyage");
 
-voyageButton.addEventListener("click", () => {
-  clickCount++;
-});
+// voyageButton.addEventListener("click", () => {
+//   clickCount++;
+// });
 
-function changeBackgroundButton() {
-  if (clickCount === changePlanete[0]) {
-    document.getElementById("background-image").style.backgroundImage =
-      backgroundPlanete[0];
-  }
-  if (clickCount === changePlanete[1]) {
-    document.getElementById("background-image").style.backgroundImage =
-      backgroundPlanete[1];
-  }
-  if (clickCount === changePlanete[2]) {
-    document.getElementById("background-image").style.backgroundImage =
-      backgroundPlanete[2];
-  }
-  if (clickCount === changePlanete[3]) {
-    document.getElementById("background-image").style.backgroundImage =
-      backgroundPlanete[3];
-  }
-  if (clickCount === changePlanete[4]) {
-    document.getElementById("background-image").style.backgroundImage =
-      backgroundPlanete[4];
-  }
-  if (clickCount === changePlanete[5]) {
-    document.getElementById("background-image").style.backgroundImage =
-      backgroundPlanete[5];
-  }
-  if (clickCount === changePlanete[6]) {
-    document.getElementById("background-image").style.backgroundImage =
-      backgroundPlanete[6];
-  }
-}
+// function changeBackgroundButton() {
+//   if (clickCount === changePlanete[0]) {
+//     document.getElementById("background-image").style.backgroundImage =
+//       backgroundPlanete[0];
+//   }
+//   if (clickCount === changePlanete[1]) {
+//     document.getElementById("background-image").style.backgroundImage =
+//       backgroundPlanete[1];
+//   }
+//   if (clickCount === changePlanete[2]) {
+//     document.getElementById("background-image").style.backgroundImage =
+//       backgroundPlanete[2];
+//   }
+//   if (clickCount === changePlanete[3]) {
+//     document.getElementById("background-image").style.backgroundImage =
+//       backgroundPlanete[3];
+//   }
+//   if (clickCount === changePlanete[4]) {
+//     document.getElementById("background-image").style.backgroundImage =
+//       backgroundPlanete[4];
+//   }
+//   if (clickCount === changePlanete[5]) {
+//     document.getElementById("background-image").style.backgroundImage =
+//       backgroundPlanete[5];
+//   }
+//   if (clickCount === changePlanete[6]) {
+//     document.getElementById("background-image").style.backgroundImage =
+//       backgroundPlanete[6];
+//   }
+// }
