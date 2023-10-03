@@ -51,7 +51,7 @@ nav h2 a{
     border-radius: 3rem;
     position: absolute;
     left: 50%;
-    right: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
     
@@ -79,6 +79,26 @@ nav h2 a{
     font-size: 1.8rem;
     cursor: pointer;
    font-weight: 400;
+}
+.popup-didacticiel{
+    width: 25rem;
+   color: var(--policy-color);
+    background-color: var(--background-color);
+    padding: 2rem 2rem;
+    border-radius: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+.popup-didacticiel p{
+    width: 100%;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+.displayPopup{
+    visibility: visible;
 }
 
 .firstPart{
@@ -122,6 +142,30 @@ section h1{
 .rocket img{
     max-width: 100%;
     padding-top: 6rem;
+    translate: all 0.6s;
+    position: relative;
+    cursor: pointer;
+}
+.rocket span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     visibility: hidden;
+    color:#35155D;
+    font-size: 3rem;
+    font-weight: 700;
+    /* transform: translate(-25%, -25%); */
+    
+    /* transition: all 0.8s; */
+    /* visibility: hidden; */ 
+     
+}
+.cliq{
+    transform: translate(-50%, -50%);
+    transition: all 0.6s;    
+}
+.rocket img:active{
+    transform: translateY(-2rem); 
 }
 .mulitplicateurs{
     background-color: lightblue;
