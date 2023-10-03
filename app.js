@@ -53,10 +53,6 @@ open.addEventListener('click', () => {
     document.querySelector(".multiplicateur").style.display = "block";
 });
 
-close.addEventListener("click", () => {
-    document.querySelector(".multiplicateur").style.display = "none";
-});
-
 const body= document.querySelector("body");
 body.addEventListener("click", ()=>{
 popupDidacticiel.style.visibility="hidden"
@@ -107,3 +103,7 @@ function changeBackgroundButton() {
         document.getElementById("background-image").style.backgroundImage = backgroundPlanete[6];
     }
 }
+
+close.addEventListener("click", () => {
+    document.querySelector(".multiplicateur").style.display = "none";
+});
