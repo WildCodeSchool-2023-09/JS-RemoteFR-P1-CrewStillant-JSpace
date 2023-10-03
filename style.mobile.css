@@ -24,12 +24,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-
+   
 }
 nav h2{
     display: flex;
     align-items: center;
-    
+   
 }
 nav h2 img{
     width: 3.8rem;
@@ -79,7 +79,7 @@ nav h2 a{
     font-size: 1.8rem;
     cursor: pointer;
    font-weight: 400;
-}
+}.
 .popup-didacticiel{
     width: 25rem;
    color: var(--policy-color);
@@ -91,6 +91,8 @@ nav h2 a{
     top: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
+    box-shadow: 1px 1px 5px 0px rgba(245, 252, 205, 0.1);
+
 }
 .popup-didacticiel p{
     width: 100%;
