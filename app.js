@@ -39,6 +39,23 @@ rocket.addEventListener("click", () => {
 
 // clique sur didacticiel
 
+const popupDidacticiel=document.querySelector(".popup-didacticiel");
+const buttonDidacticiel= document.querySelector(".didacticiel");
+buttonDidacticiel.addEventListener("click", ()=>{
+popupDidacticiel.classList.toggle("displayPopup");
+    
+})
+const open = document.querySelector(".mulitplicateurs")
+const menu = document.querySelector(".multiplicateur")
+const close = document.querySelector(".close")
+
+open.addEventListener('click', () => {
+    document.querySelector(".multiplicateur").style.display = "block";
+});
+
+close.addEventListener("click", () => {
+    document.querySelector(".multiplicateur").style.display = "none";
+});
 const popupDidacticiel = document.querySelector(".popup-didacticiel");
 const buttonDidacticiel = document.querySelector(".didacticiel");
 buttonDidacticiel.addEventListener("click", () => {
