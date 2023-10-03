@@ -56,11 +56,6 @@ open.addEventListener('click', () => {
 close.addEventListener("click", () => {
     document.querySelector(".multiplicateur").style.display = "none";
 });
-const popupDidacticiel = document.querySelector(".popup-didacticiel");
-const buttonDidacticiel = document.querySelector(".didacticiel");
-buttonDidacticiel.addEventListener("click", () => {
-  popupDidacticiel.classList.toggle("displayPopup");
-});
 
 const body= document.querySelector("body");
 body.addEventListener("click", ()=>{
