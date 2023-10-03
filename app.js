@@ -54,7 +54,7 @@ Button.classList.add("voyage");
 Button.innerHTML = "Voyage";
 Button.appendChild(Button);
 
-Let clickCount = 0
+let clickCount = 0;
 let backgroundPlanete = [
   "URL('/img/terre_fond.png')",
   "URL('/img/mars_fond.png')",
