@@ -150,17 +150,12 @@ button {
 }
 .rocket span{
     position: absolute;
-    top: 50%;
+    top: 38%;
     left: 50%;
      visibility: hidden;
     color:#35155D;
     font-size: 3rem;
-    font-weight: 700;
-    /* transform: translate(-25%, -25%); */
-    
-    /* transition: all 0.8s; */
-    /* visibility: hidden; */ 
-     
+    font-weight: 700;  
 }
 .cliq{
     transform: translate(-50%, -50%);

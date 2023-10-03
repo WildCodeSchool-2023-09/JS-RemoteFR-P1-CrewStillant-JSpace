@@ -2,34 +2,42 @@
     --policy-color: #F5FCCD;
     --background-color: #35155D;
     font-size: 62.5%;
+} 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-
-nav{
+a{
+    text-decoration: none;
+    color: var(--policy-color);
+}
+body{
+    font-size: 1.6rem;
+}
+                /* HEADER */
+nav {
     background-color: var(--background-color);
     color: var(--policy-color);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
-    left: 0;
+    padding: 1rem;
+
 }
-
-
-.team-jspace {
-    background-image: url(image/background_bas.png);
-    background-size: cover;
-    color: var(--policy-color);
-}
-
-footer {
-    color: var(--policy-color);
-    background-color: var(--background-color);
+nav h2{
+    display: flex;
+    align-items: center;
     
-    position: absolute;
-    width: 100%;
-    height: 5em;
-    bottom: 0;
-    left: 0;
 }
+nav h2 img{
+    width: 4rem;
+    height: 4rem;
+}
+nav h2 a{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-left: -1rem;
+}
+
+
