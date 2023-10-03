@@ -45,9 +45,14 @@ buttonDidacticiel.addEventListener("click", ()=>{
 popupDidacticiel.classList.toggle("displayPopup");
     
 })
-const open = querySelector(".mulitplicateurs")
-const menu = querySelector(".multiplicateur")
+const open = document.querySelector(".mulitplicateurs")
+const menu = document.querySelector(".multiplicateur")
+const close = document.querySelector(".close")
 
-function w3_open() {
+open.addEventListener('click', open(){
     document.querySelector(".multiplicateur").style.display = "block";
-  }
+});
+
+close.addEventListener("click", close(){
+    document.querySelector(".multiplicateur").style.display = "none";
+});
