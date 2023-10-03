@@ -44,7 +44,9 @@ const buttonDidacticiel= document.querySelector(".didacticiel");
 buttonDidacticiel.addEventListener("click", ()=>{
 popupDidacticiel.classList.toggle("displayPopup");
     
-})
+});
+
+
 const open = document.querySelector(".mulitplicateurs")
 const menu = document.querySelector(".multiplicateur")
 const close = document.querySelector(".close")
