@@ -71,9 +71,7 @@ let currentBackgroundIndex = 0;
 const voyageButton = document.getElementById ("voyage");
 
 voyageButton.addEventListener ("click",() => {
-    clickCount++;
-    voyageButton.textContent = `clics : ${clickCount}`;
-});
+    clickCount++;});
 
 function changeBackgroundButton() {
     if (clickCount === changePlanete [0] ){
