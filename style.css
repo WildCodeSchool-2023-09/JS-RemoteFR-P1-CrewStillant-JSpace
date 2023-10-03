@@ -1,31 +1,4 @@
 :root {
-<<<<<<< HEAD
-    --policy-color: #F5FCCD;
-    --background-color: #35155D;
-    font-size: 62.5%;
-} 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-    color: var(--policy-color);
-}
-body{
-    font-size: 1.6rem;
-}
-                /* HEADER */
-nav {
-    background-color: var(--background-color);
-    color: var(--policy-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    
-=======
   --policy-color: #f5fccd;
   --background-color: #35155d;
   font-size: 62.5%;
@@ -40,90 +13,11 @@ nav {
   align-items: center;
   top: 0;
   left: 0;
->>>>>>> faacfa5245e53f81b31ed0c7bba42bded33af201
 }
 a {
   text-decoration: none;
   color: var(--policy-color);
 }
-<<<<<<< HEAD
-nav h2 img{
-    width: 4.5rem;
-    height: 4.5rem;
-}
-nav h2 a{
-    font-size: 2.6rem;
-    font-weight: 400;
-    margin-left: -1.5rem;
-}
-.pseudo{
-    font-size: 2rem;
-}
-.popup{
-    width: 30rem;
-   color: var(--policy-color);
-    background-color: var(--background-color);
-    padding: 5rem 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 3rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden;
-    
-}
-.popup input{
-    padding: 1rem 2rem;
-    margin-bottom: 2rem;
-    outline: 0;
-    border: 0;
-    border-radius: 3rem;
-    background-color: var(--policy-color);
-    color: #35155D;
-    font-size: 2rem;
-}
-.popup p{
-    margin:2rem 0;
-    font-size: 2.4rem;
-}
-.popup button{
-    width: 50%;
-   border-radius: 3rem;
-    padding: 0.8rem;
-    background-color: var(--policy-color);
-    color: #35155D;
-    font-size: 2rem;
-    cursor: pointer;
-   font-weight: 400;
-   border: 0;
-}
-
-.popup-didacticiel{
-    width: 30rem;
-    color: var(--policy-color);
-    background-color: var(--background-color);
-    padding: 3rem 3rem;
-    border-radius: 3rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden;
-    box-shadow: 8px 8px 24px 0px rgba(245, 252, 205, 0.2);
-    
-}
-.popup-didacticiel p{
-    width: 100%;
-    line-height: 3.5rem;
-    font-size: 2rem;
-}
-.displayPopup{
-    visibility: visible;
-}
-=======
 body {
   font-size: 1.6rem;
 }
@@ -149,4 +43,3 @@ nav h2 a {
   font-weight: 400;
   margin-left: -1rem;
 }
->>>>>>> faacfa5245e53f81b31ed0c7bba42bded33af201
