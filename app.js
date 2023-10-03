@@ -50,10 +50,6 @@ body.addEventListener("click", ()=>{
 popupDidacticiel.style.visibility="hidden"
 
 })
-const Button = document.createElement("Button");
-Button.classList.add("voyage");
-Button.innerHTML = "Voyage";
-Button.appendChild(Button);
 
 let clickCount = 0;
 let backgroundPlanete = [
