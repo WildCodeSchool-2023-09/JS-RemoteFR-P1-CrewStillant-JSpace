@@ -1,76 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSpace</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media=" only screen and (max-width: 500px) " href="style.mobile.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media=" only screen and (max-width: 500px) "
+      href="style.mobile.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <h2>
-                <img src="img/logo.png" alt="logo fusée">
-                <a href="#">JSpace</a>
-                </h2> 
-            <div class="pseudo">Percival lvl 0</div> 
-        </nav> 
+      <nav>
+        <h2>
+          <img src="img/logo.png" alt="logo fusée" />
+          <a href="#">JSpace</a>
+        </h2>
+        <div class="pseudo">Percival lvl 0</div>
+      </nav>
     </header>
     <section class="game">
-        
-        <h1>
-            Galaxy is yours!
-        </h1>
-        <div class="container">
-            <button class="tutorial">
-                Didacticiel
-            </button>
-    
-            <h2><span id="numberOfPoints"></span> points: </h2>
-            
-            <button class="travel">
-                Voyage
-            </button>
+      <h1>Galaxy is yours!</h1>
+      <div class="container">
+        <button class="tutorial">Didacticiel</button>
 
-        </div>
-        <div class="content">
-            <div class="container rocket-mutiple">
-                <div class="rocket">
-                    <img src="img/fusee.png" alt="Picture of a rocket">
-                    <span class="added-one">+1</span>
-                </div>
-                <ul class="multiple">
-                    <li><img src="img/terre.png" alt=""><a href="#">Terre</a></li>
-                    <li><img src="img/mars.png" alt=""><a href="#">Mars</a></li>
-                    <li><img src="img/jupiter.png" alt=""><a href="#">Jupiter</a></li>
-                    <li><img src="img/saturne.png" alt=""><a href="#">Saturne</a></li>
-                    <li><img src="img/uranus.png" alt=""><a href="#">Uranus</a></li>
-                    <li><img src="img/neptune.png" alt=""><a href="#">Neptune</a></li>
-                    <li><img src="img/js.png" alt=""><a href="#">JS</a></li>
-                    <span id="close">&times; </span>
-                </ul>
-    
-            </div>
-            <button id="open">☰</button>
-        </div>
-        <div class="popup">
-            <p> Votre Pseudo</p>
-            <input type="text" name="login" id="login">
-            <button class="btn">OK</button>
-        </div>
-        <div class="popup-tutorial">
-            <p>
-                -Cliquez sur la fusée pour gagner des points. <br>
-                -Accumulez des points pour débloquer de nouvelles planètes. <br>
-                -Continuez votre voyage spatial à travers un univers en expansion !
-            </p>
+        <h2><span id="numberOfPoints"></span> points:</h2>
+
+        <button class="travel">Voyage</button>
+      </div>
+      <div class="content">
+        <div class="container rocket-mutiple">
+          <div class="rocket">
+            <img src="img/fusee.png" alt="Picture of a rocket" />
+            <span class="added-one">+1</span>
+          </div>
+          <ul class="multiple">
+            <li><img src="img/terre.png" alt="" /><a href="#">Terre</a></li>
+            <li><img src="img/mars.png" alt="" /><a href="#">Mars</a></li>
+            <li><img src="img/jupiter.png" alt="" /><a href="#">Jupiter</a></li>
+            <li><img src="img/saturne.png" alt="" /><a href="#">Saturne</a></li>
+            <li><img src="img/uranus.png" alt="" /><a href="#">Uranus</a></li>
+            <li><img src="img/neptune.png" alt="" /><a href="#">Neptune</a></li>
+            <li><img src="img/js.png" alt="" /><a href="#">JS</a></li>
             <span id="close">&times; </span>
+          </ul>
         </div>
-           
+        <button id="open">☰</button>
+      </div>
+      <div class="popup">
+        <p>Votre Pseudo</p>
+        <input type="text" name="login" id="login" />
+        <button class="btn">OK</button>
+      </div>
+      <div class="popup-tutorial">
+        <p>
+          -Cliquez sur la fusée pour gagner des points. <br />
+          -Accumulez des points pour débloquer de nouvelles planètes. <br />
+          -Continuez votre voyage spatial à travers un univers en expansion !
+        </p>
+        <span id="close">&times; </span>
+      </div>
     </section>
-    
-    <section class="team-jspace">
+
+    <!-- <section class="team-jspace">
         <h1>La Team JSpace<h1>
 
             <p>Je m'appelle Vincent Augier je suis en formation Web Dev à la Wild Code School.</p>
@@ -82,11 +76,77 @@
             <p>Je m'appelle Isabel Lucinda Pinto je suis en formation Web Dev à la Wild Code School.</p>
 
         
+    </section> -->
+    <section class="team-jspace">
+      <h1 class="team-jspace-title">La Team JSpace</h1>
+        <article>
+            <div class="bubble-container">
+            <img
+                src="img/Dialog Balloon.png"
+                alt="Dialog Bubble"
+                class="bubble-image"
+            />
+            <p class="bubble-text">
+                Salut, moi C'est Lucinda, étudiante à la WCS
+            </p>
+            </div>
+            <div class="perso1">
+                <div class="lucinda"><img src="img/lucinda_astro.png" alt="lucinda" class="lucinda" >
+                <p class="lulu"><span>Lucinda</span></p>
+            </div> 
+        </article>
+        <article>
+            <div class="bubble-container">
+            <img
+                src="img/Dialog Balloon.png"
+                alt="Dialog Bubble"
+                class="bubble-image"
+            />
+            <p class="bubble-text">
+                Salut, moi C'est Julien, étudiante à la WCS
+            </p>
+            </div>
+            <div class="perso1">
+                <div class="lucinda"><img src="img/julien_astro.png" alt="lucinda" class="lucinda" >
+                <p class="lulu"><span>Lucinda</span></p>
+            </div> 
+        </article>
+        <article>
+            <div class="bubble-container">
+            <img
+                src="img/Dialog Balloon.png"
+                alt="Dialog Bubble"
+                class="bubble-image"
+            />
+            <p class="bubble-text">
+                Salut, moi C'est Vincent, étudiante à la WCS
+            </p>
+            </div>
+            <div class="perso1">
+                <div class="lucinda"><img src="img/vincent_astro.png" alt="lucinda" class="lucinda" >
+                <p class="lulu"><span>Lucinda</span></p>
+            </div> 
+        </article>
+        <article>
+            <div class="bubble-container">
+            <img
+                src="img/Dialog Balloon.png"
+                alt="Dialog Bubble"
+                class="bubble-image"
+            />
+            <p class="bubble-text">
+                Salut, moi C'est Serigne, étudiante à la WCS
+            </p>
+            </div>
+            <div class="perso1">
+                <div class="lucinda"><img src="img/serigne_astro.png" alt="lucinda" class="lucinda" >
+                <p class="lulu"><span>Lucinda</span></p>
+            </div> 
+        </article>
     </section>
-
     <footer>
-        <img src="" alt="Black rocket"> Team &copy JSpace wilder-2023
+      <img src="" alt="Black rocket" /> Team &copy JSpace wilder-2023
     </footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

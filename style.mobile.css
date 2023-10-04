@@ -193,7 +193,26 @@ ul li img{
   font-size: 2rem;
 }
 
+section.team-jspace{
+  background: url("img/space-back.jpg");
 
+}
+article{
+  display: flex;
+  justify-content: center;
+}
+.bubble-container{
+  position: relative;
+  margin-right: -10rem;
+}
+.bubble-text{
+  position: absolute;
+  top: 16% ;
+  left: 34%;
+  color: var(--background-color);
+  width: 50%;
+  font-size: 1.7rem;
+}
 
 footer {
     color: var(--policy-color);
