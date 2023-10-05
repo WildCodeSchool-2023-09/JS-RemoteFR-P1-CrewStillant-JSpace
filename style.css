@@ -275,7 +275,7 @@ article{
 .bubble-container p{
   position: absolute;
   color: var(--background-color);
-  top: 38%;
+  top: 35%;
   left: 20%;
   width: 50%;
   text-align: center;
