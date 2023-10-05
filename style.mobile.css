@@ -111,25 +111,25 @@ section h1 {
   justify-content: center;
   padding-top: 1rem;
 }
-.informationBarre {
+.infoBar {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
 }
-.informationBarre h2 {
+.infoBar h2 {
   color: var(--policy-color);
   background-color: var(--background-color);
   border-radius: 2rem;
   padding: 0rem 1rem;
 }
-.didacticiel {
+.tutorial {
   background-color: var(--background-color);
   border-radius: 1.5rem;
   color: var(--policy-color);
   font-size: 1.25rem;
   padding: 0rem 0.75rem;
 }
-#voyage {
+#travel {
   background-color: var(--background-color);
   border-radius: 1.5rem;
   color: var(--policy-color);
@@ -159,7 +159,7 @@ section h1 {
 .rocket img:active {
   transform: translateY(-2rem);
 }
-.mulitplicateurs{
+.slidingButton{
     background-color: lightblue;
     position: absolute;
     font-size: large;
@@ -170,26 +170,29 @@ section h1 {
     border: none;
     opacity: 0.2;
 }
-.multiplicateur{
-    background-color: #0273C5;
-    color: var(--policy-color);
-    position: absolute;
-    top: 15%;
-    left: 33%;
-    border-radius: 1rem;
-    padding: 1rem;
-    gap: 1rem;
-    padding-right: 3rem ;
-    list-style-type: none;
-    opacity: 0.8;
-    margin: 11rem;
+.multiplicator{
+  position: sticky;
+  right: 0%;
+  background-color: #0273C5;
+  color: var(--policy-color);
+  position: absolute;
+  top: 15%;
+  /* left: 33%; */
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+  padding-right: 3rem;
+  list-style-type: none;
+  opacity: 0.8;
+  margin: 11rem 0rem;
+  margin-left: 20rem;
 }
-.multiplicateur ul {
+.multiplicator ul {
   display: flex;
   justify-content: center;
   padding-bottom: 1rem;
 }
-.multiplicateur button{
+.multiplicator button{
     background-color: #0273C5;
     border-style: none;
 }
@@ -201,7 +204,7 @@ section h1 {
     width: 10rem;
     background-color: #0273C5 ;
 }
-.multiplicateur img {
+.multiplicator img {
   width: 3rem;
 }
 ul {
@@ -214,12 +217,13 @@ ul {
   position: relative;
   display: flex;
   height: 115rem;
-  width: 50rem;
+  width: 100%;  
   background-color: black;
   background-image: url('./img/background_bas.png');
   background-size: cover;  /* pour couvrir toute la zone de l'élément */
   background-repeat: no-repeat; 
 }
+
 
 .team-jspace {
   position: absolute;
@@ -230,9 +234,22 @@ ul {
   flex-direction: column;
   top: 1rem;
 }
-.titre{
-  color: white;
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
+
+.title{
+  color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* FIRST CHARACTER + BUBBLE */
 
 .lucinda {
   display: flex;
@@ -249,39 +266,50 @@ ul {
 
 }
 
-.perso1{
-  position: absolute;
+.character1{
+  position: relative;
   display: flex;
   justify-content: end;
   align-items: end;
-  top: 12rem;
-  left: 34rem;
+  bottom: 9%;
+  left: -1%;
 }
 
 
 .bubble-container{
   position: relative;
-  right: -1rem;
-  top: -2rem;
-
-}
-
-.bubble-text{
-  position: absolute;
   display: flex;
-  justify-content: center;
-  top: 7rem;
-  left: 12rem;
-  width: 19rem;
+  justify-content: center; 
+  align-items: center; 
+  right: 5%;
+  top: -2%;
+  max-width: 800px; 
+  width: 90%; 
+  margin: 0 auto; 
+}
+
+
+.bubble-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.bubble-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  width: 69%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+  font-size: 3.5vw; 
 }
 
 
 
+/* SECOND CHARACTER + BUBBLE */
 
-
-
-
-.julien{
+.julien {
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -291,42 +319,54 @@ ul {
 .juju{
   display: flex;
   justify-content: center;
-  margin-top: 0rem;
-  margin-left: -2rem;
-
+  color: white;
+  margin-right: 17%;
 }
 
-.perso2{
-  position: absolute;
+.character2{
+  position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: end;
-  top: 37rem;
-  left: -1rem;
+  bottom: 22%;
+  left: -66%;
 }
 
 
 .bubble-container2{
   position: relative;
-  right: 1rem;
-  top: 1rem;
-  transform: scaleX(-1);
-}
-
-
-
-.bubble-text2{
-  position: absolute;
   display: flex;
   justify-content: center;
-  top: 7rem;
-  left: 9rem;
-  width: 19rem;
+  align-items: center;
+  right: -2%;
+  top: -15%;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
   transform: scaleX(-1);
 }
 
 
+.bubble-image2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 
+.bubble-text2 {
+  position: absolute;
+    top: 43%;
+    left: 19%;
+    width: 61%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3.5vw;
+    transform: scaleX(-1);
+}
+
+
+
+/* THIRD CHARACTER + BUBBLE */
 
 .vincent {
   display: flex;
@@ -338,39 +378,52 @@ ul {
 .vinvin{
   display: flex;
   justify-content: center;
-  margin-top: 0rem;
-  margin-left: 2rem;
-
+  color: white;
+  margin-right: -14%;
 }
 
-.perso3{
-  position: absolute;
+.character3{
+  position: relative;
   display: flex;
   justify-content: end;
   align-items: end;
-  top: 26rem;
-  left: 34rem;
+  bottom: 34%;
+  left: -7%;
 }
 
 
 .bubble-container3{
   position: relative;
-  right: 10rem;
-  top: 14rem;
-
-}
-
-.bubble-text3{
-  position: absolute;
   display: flex;
   justify-content: center;
-  top: 7rem;
-  left: 13rem;
-  width: 19rem;
+  align-items: center;
+  right: 1%;
+  top: -27%;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 
+.bubble-image3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 
+.bubble-text3 {
+  position: absolute;
+  top: 49%;
+  left: 38%;
+  width: 56%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3.5vw;
+  left: 50%;
+
+}
+
+/* FOURTH CHARACTER + BUBBLE */
 
 .serigne {
   display: flex;
@@ -382,43 +435,56 @@ ul {
 .sese{
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  margin-left: 0rem;
-
+  color: white;
+  margin-right: 6%;
+  margin-bottom: 2%;
+  margin-top: 3%;
 }
 
-.perso4{
-  position: absolute;
+.character4{
+  position: relative;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: end;
-  top: 26rem;
-  left: -34rem;
+  bottom: 49%;
+  left: 0%;
 }
 
 
 .bubble-container4{
   position: relative;
-  right: 46rem;
-  top: 14rem;
-  transform: scaleX(-1);
-
-}
-
-.bubble-text4{
-  position: absolute;
   display: flex;
   justify-content: center;
-  top: 7rem;
-  left: 10rem;
-  width: 18rem;
-  transform: scaleX(-1);
-
+  align-items: center;
+  right: 1%;
+  top: -40%;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  
 }
 
 
+.bubble-image4 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+}
 
+.bubble-text4 {
+  position: absolute;
+  top: 48%;
+  left: 41%;
+  width: 57%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3.5vw;
+  left: 50%;
+  
 
+}
+  
 footer {
   position: fixed;
   bottom: 0;
