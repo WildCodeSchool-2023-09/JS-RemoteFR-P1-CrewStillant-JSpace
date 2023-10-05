@@ -37,15 +37,27 @@ rocket.addEventListener("click", () => {
   }, 125);
 });
 
-// clique sur didacticiel
-
-const popupDidacticiel=document.querySelector(".popup-didacticiel");
-const buttonDidacticiel= document.querySelector(".tutorial");
-buttonDidacticiel.addEventListener("click", ()=>{
-popupDidacticiel.classList.toggle("displayPopup");
-    
+// clique sur tutorial
+const tutorialButton=document.querySelector(".tutorial");
+const popupTutorial=document.querySelector(".popup-tutorial");
+const closePopupTutorial=document.querySelector(".popup-tutorial span");
+tutorialButton.addEventListener("click", ()=>{
+  popupTutorial.style.visibility="visible";
 })
-const open = document.querySelector(".slideButton")
+
+closePopupTutorial.addEventListener("click", ()=>{
+  popupTutorial.style.visibility="hidden";
+})
+
+// const popupDidacticiel=document.querySelector(".popup-tutorial");
+// const buttonDidacticiel= document.querySelector(".tutorial");
+// buttonDidacticiel.addEventListener("click", ()=>{
+// popupDidacticiel.classList.toggle("displayPopup");
+    
+// });
+
+
+const open = document.querySelector(".mulitplicator")
 const menu = document.querySelector(".multiplicator")
 const close = document.querySelector(".close")
 
@@ -53,11 +65,11 @@ open.addEventListener('click', () => {
     document.querySelector(".multiplicator").style.display = "block";
 });
 
-const body= document.querySelector("body");
-body.addEventListener("click", ()=>{
-popupDidacticiel.style.visibility="hidden"
+// const body= document.querySelector("body");
+// body.addEventListener("click", ()=>{
+// popuptutorial.style.visibility="hidden"
 
-})
+// })
 
 let clickCount = 0;
 let backgroundPlanete = [
@@ -74,9 +86,9 @@ let changePlanete = [10, 20, 30, 40, 50, 60, 70];
 
 let currentBackgroundIndex = 0;
 
-const voyageButton = document.getElementById("travel");
+const travelButton = document.getElementById("travel");
 
-voyageButton.addEventListener("click", () => {
+travelButton.addEventListener("click", () => {
    clickCount++;
 });
 
