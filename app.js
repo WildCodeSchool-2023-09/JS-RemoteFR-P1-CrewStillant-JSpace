@@ -28,7 +28,7 @@ const rocket = document.querySelector(".rocket img");
 let count = 0;
 rocket.addEventListener("click", () => {
   count++;
-  const numberClicque = document.querySelector(".informationBarre h2 span");
+  const numberClicque = document.querySelector(".infoBar h2 span");
   numberClicque.innerHTML = count;
   addedOne.style.visibility = "visible";
   addedOne.classList.add("cliq");
@@ -40,17 +40,17 @@ rocket.addEventListener("click", () => {
 // clique sur didacticiel
 
 const popupDidacticiel=document.querySelector(".popup-didacticiel");
-const buttonDidacticiel= document.querySelector(".didacticiel");
+const buttonDidacticiel= document.querySelector(".tutorial");
 buttonDidacticiel.addEventListener("click", ()=>{
 popupDidacticiel.classList.toggle("displayPopup");
     
 })
-const open = document.querySelector(".mulitplicateurs")
-const menu = document.querySelector(".multiplicateur")
+const open = document.querySelector(".slideButton")
+const menu = document.querySelector(".multiplicator")
 const close = document.querySelector(".close")
 
 open.addEventListener('click', () => {
-    document.querySelector(".multiplicateur").style.display = "block";
+    document.querySelector(".multiplicator").style.display = "block";
 });
 
 const body= document.querySelector("body");
@@ -74,7 +74,7 @@ let changePlanete = [10, 20, 30, 40, 50, 60, 70];
 
 let currentBackgroundIndex = 0;
 
-const voyageButton = document.getElementById("voyage");
+const voyageButton = document.getElementById("travel");
 
 voyageButton.addEventListener("click", () => {
    clickCount++;
@@ -105,5 +105,5 @@ function changeBackgroundButton() {
 }
 
 close.addEventListener("click", () => {
-    document.querySelector(".multiplicateur").style.display = "none";
+    document.querySelector(".multiplicator").style.display = "none";
 });
