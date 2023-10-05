@@ -29,6 +29,7 @@ let count = 0;
 rocket.addEventListener("click", () => {
   count++;
   const numberClicque = document.querySelector(".infoBar h2 span");
+  const numberClicque = document.querySelector(".infoBar h2 span");
   numberClicque.innerHTML = count;
   addedOne.style.visibility = "visible";
   addedOne.classList.add("cliq");
