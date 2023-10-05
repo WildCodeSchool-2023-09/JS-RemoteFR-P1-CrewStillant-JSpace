@@ -77,7 +77,7 @@ nav h2 a {
   cursor: pointer;
   font-weight: 400;
 }
-.popup-didacticiel {
+.popup-tutorial {
   width: 25rem;
   color: var(--policy-color);
   background-color: var(--background-color);
@@ -89,7 +89,7 @@ nav h2 a {
   transform: translate(-50%, -50%);
   visibility: hidden;
 }
-.popup-didacticiel p {
+.popup-tutorial p {
   width: 100%;
   line-height: 3rem;
   font-size: 2rem;
@@ -111,25 +111,25 @@ section h1 {
   justify-content: center;
   padding-top: 1rem;
 }
-.informationBarre {
+.infoBar {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
 }
-.informationBarre h2 {
+.infoBar h2 {
   color: var(--policy-color);
   background-color: var(--background-color);
   border-radius: 2rem;
   padding: 0rem 1rem;
 }
-.didacticiel {
+.tutorial {
   background-color: var(--background-color);
   border-radius: 1.5rem;
   color: var(--policy-color);
   font-size: 1.25rem;
   padding: 0rem 0.75rem;
 }
-#voyage {
+#travel {
   background-color: var(--background-color);
   border-radius: 1.5rem;
   color: var(--policy-color);
@@ -159,7 +159,7 @@ section h1 {
 .rocket img:active {
   transform: translateY(-2rem);
 }
-.mulitplicateurs{
+.slidingButton {
     background-color: lightblue;
     position: absolute;
     font-size: large;
@@ -170,7 +170,7 @@ section h1 {
     border: none;
     opacity: 0.2;
 }
-.multiplicateur{
+.multiplicator{
     background-color: #0273C5;
     color: var(--policy-color);
     position: absolute;
@@ -184,12 +184,12 @@ section h1 {
     opacity: 0.8;
     margin: 11rem;
 }
-.multiplicateur ul {
+.multiplicator ul {
   display: flex;
   justify-content: center;
   padding-bottom: 1rem;
 }
-.multiplicateur button{
+.multiplicator button{
     background-color: #0273C5;
     border-style: none;
 }
@@ -201,7 +201,7 @@ section h1 {
     width: 10rem;
     background-color: #0273C5 ;
 }
-.multiplicateur img {
+.multiplicator img {
   width: 3rem;
 }
 ul {
@@ -230,7 +230,7 @@ ul {
   flex-direction: column;
   top: 1rem;
 }
-.titre{
+.title {
   color: white;
 }
 

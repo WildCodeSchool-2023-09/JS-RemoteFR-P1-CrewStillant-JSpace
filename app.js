@@ -28,7 +28,7 @@ const rocket = document.querySelector(".rocket img");
 let count = 0;
 rocket.addEventListener("click", () => {
   count++;
-  const numberClicque = document.querySelector(".informationBarre h2 span");
+  const numberClicque = document.querySelector(".infoBar h2 span");
   numberClicque.innerHTML = count;
   addedOne.style.visibility = "visible";
   addedOne.classList.add("cliq");
@@ -39,27 +39,29 @@ rocket.addEventListener("click", () => {
 
 // clique sur didacticiel
 
-const popupDidacticiel=document.querySelector(".popup-didacticiel");
-const buttonDidacticiel= document.querySelector(".didacticiel");
-buttonDidacticiel.addEventListener("click", ()=>{
-popupDidacticiel.classList.toggle("displayPopup");
-    
+const popuptutorial=document.querySelector(".popup-tutorial");
+const buttontutorial= document.querySelector(".tutorial");
+buttontutorial.addEventListener("click", ()=>{
+popuptutorial.classList.toggle("displayPopup");
+ 
+//Multi
 })
-const open = document.querySelector(".mulitplicateurs")
-const menu = document.querySelector(".multiplicateur")
+const open = document.querySelector(".slidingButton")
+const menu = document.querySelector(".multiplicator")
 const close = document.querySelector(".close")
 
 open.addEventListener('click', () => {
-    document.querySelector(".multiplicateur").style.display = "block";
+    document.querySelector(".multiplicator").style.display = "block";
 });
 
-const body= document.querySelector("body");
-body.addEventListener("click", ()=>{
-popupDidacticiel.style.visibility="hidden"
+close.addEventListener("click", () => {
+  document.querySelector(".multiplicator").style.display = "none";
+});
 
-})
+//const body= document.querySelector("body");
+//body.addEventListener("click", ()=>{
+//popuptutorial.style.visibility="hidden"})
 
-let clickCount = 0;
 let backgroundPlanete = [
     "URL('/img/terre_fond.png')",
     "URL('/img/mars_fond.png')",
@@ -70,40 +72,33 @@ let backgroundPlanete = [
     "URL('/img/js_fond.png')",
 ];
 
+let clickCount = 0;
 let changePlanete = [10, 20, 30, 40, 50, 60, 70];
 
-let currentBackgroundIndex = 0;
-
-const voyageButton = document.getElementById("voyage");
+const voyageButton = document.getElementById("travel");
 
 voyageButton.addEventListener("click", () => {
-   clickCount++;
+   changeBackgroundButton();
+   document.getElementById("background-image").style.visibility = "visible"
 });
 
 function changeBackgroundButton() {
-    if (clickCount === changePlanete[0]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[0];
-    }
-    if (clickCount === changePlanete[1]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[1];
-    }
-    if (clickCount === changePlanete[2]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[2];
-    }
-    if (clickCount === changePlanete[3]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[3];
-    }
-    if (clickCount === changePlanete[4]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[4];
-    }
-    if (clickCount === changePlanete[5]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[5];
-    }
-    if (clickCount === changePlanete[6]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[6];
-    }
+  if (changePlanete.includes(clickCount)) {
+    document.getElementById("background-image").style.backgroundImage = backgroundPlanete[changePlanete.indexOf(clickCount)];
+  }
 }
 
-close.addEventListener("click", () => {
-    document.querySelector(".multiplicateur").style.display = "none";
-});
+//Faire clignoter le bouton "voyage"
+
+function clignButton() {
+  setInterval( function () { 
+    voyageButton.style.visibility = (voyageButton.style.visibility=='visible')?'hidden':'visible';
+  },677)
+}
+
+rocket.addEventListener("click", () => {
+  clickCount++;
+  if (count === changePlanete[0]) {
+    clignButton ()
+  }
+});  
