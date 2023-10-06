@@ -21,7 +21,7 @@ pseudo.addEventListener("click", () => {
   popup.style.visibility = "visible";
 });
 
-// nombre de clique sur la fusée.
+// nombre de clique sur la fusÃ©e.
 const addedOne = document.querySelector(".added-one");
 
 const rocket = document.querySelector(".rocket img");
@@ -37,41 +37,32 @@ rocket.addEventListener("click", () => {
   }, 125);
 });
 
-// clique sur tutorial
-const tutorialButton=document.querySelector(".tutorial");
-const popupTutorial=document.querySelector(".popup-tutorial");
-const closePopupTutorial=document.querySelector(".popup-tutorial span");
-tutorialButton.addEventListener("click", ()=>{
-  popupTutorial.style.visibility="visible";
-})
+// clique sur didacticiel
 
-closePopupTutorial.addEventListener("click", ()=>{
-  popupTutorial.style.visibility="hidden";
-})
+const popuptutorial=document.querySelector(".popup-tutorial");
+const buttontutorial= document.querySelector(".tutorial");
+buttontutorial.addEventListener("click", ()=>{
+popuptutorial.classList.toggle("displayPopup");
+}) 
 
-// const popupDidacticiel=document.querySelector(".popup-tutorial");
-// const buttonDidacticiel= document.querySelector(".tutorial");
-// buttonDidacticiel.addEventListener("click", ()=>{
-// popupDidacticiel.classList.toggle("displayPopup");
-    
-// });
+//Multi
 
-
-const open = document.querySelector(".mulitplicator")
+const open = document.querySelector(".slidingButton")
 const menu = document.querySelector(".multiplicator")
 const close = document.querySelector(".close")
 
 open.addEventListener('click', () => {
-    document.querySelector(".multiplicator").style.display = "block";
+    document.querySelector(".multiplicator").style.marginLeft = "-12rem";
 });
 
-// const body= document.querySelector("body");
-// body.addEventListener("click", ()=>{
-// popuptutorial.style.visibility="hidden"
+close.addEventListener("click", () => {
+  document.querySelector(".multiplicator").style.marginLeft = "12rem";
+});
 
-// })
+//const body= document.querySelector("body");
+//body.addEventListener("click", ()=>{
+//popuptutorial.style.visibility="hidden"})
 
-let clickCount = 0;
 let backgroundPlanete = [
     "URL('/img/terre_fond.png')",
     "URL('/img/mars_fond.png')",
@@ -82,40 +73,28 @@ let backgroundPlanete = [
     "URL('/img/js_fond.png')",
 ];
 
+let clickCount = 0;
 let changePlanete = [10, 20, 30, 40, 50, 60, 70];
 
 let currentBackgroundIndex = 0;
+const voyageButton = document.getElementById("travel");
 
-const travelButton = document.getElementById("travel");
-
-travelButton.addEventListener("click", () => {
-   clickCount++;
+voyageButton.addEventListener("click", () => {
+   changeBackgroundButton();
+   document.getElementById("background-image").style.visibility = "visible"
 });
 
 function changeBackgroundButton() {
-    if (clickCount === changePlanete[0]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[0];
-    }
-    if (clickCount === changePlanete[1]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[1];
-    }
-    if (clickCount === changePlanete[2]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[2];
-    }
-    if (clickCount === changePlanete[3]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[3];
-    }
-    if (clickCount === changePlanete[4]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[4];
-    }
-    if (clickCount === changePlanete[5]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[5];
-    }
-    if (clickCount === changePlanete[6]) {
-        document.getElementById("background-image").style.backgroundImage = backgroundPlanete[6];
-    }
+    document.getElementById("background-image").style.backgroundImage = backgroundPlanete[currentBackgroundIndex];
+    voyageButton.className = "";
 }
 
-close.addEventListener("click", () => {
-    document.querySelector(".multiplicator").style.display = "none";
-});
+//Faire clignoter le bouton "voyage"
+
+rocket.addEventListener("click", () => {
+  clickCount++;
+  if (changePlanete.includes(clickCount)) {
+    voyageButton.className = "blink"
+    currentBackgroundIndex = changePlanete.indexOf(clickCount)
+  }
+});  
