@@ -1,132 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSpace</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media=" only screen and (max-width: 500px) " href="style.mobile.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media=" only screen and (max-width: 500px) "
+      href="style.mobile.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <h2>
-                <img src="img/logo.png" alt="logo fusée">
-                <a href="#">JSpace</a>
-                </h2> 
-            <div class="pseudo">Pseudo</div> 
-        </nav> 
+      <nav>
+        <h2>
+          <img src="img/logo.png" alt="logo fusée" />
+          <a href="#">JSpace</a>
+        </h2>
+        <div class="pseudo">Pseudo</div>
+      </nav>
     </header>
-    <section id = "background-image" class ="firstPart">
-        
-        <h1> Galaxy is yours!</h1>
-            
+    <section id="background-image" class="firstPart">
+      <h1>Galaxy is yours!</h1>
 
-        <div class="infoBar">
-            <button class="tutorial">
-                Didacticiel
-            </button>
-    
-            <h2> <span></span> </h2>
-            
-            <button onclick="changeBackgroundButton()" id="travel"> Voyage </button>
-        </div>
-       
+      <div class="infoBar">
+        <button class="tutorial">Didacticiel</button>
+
+        <h2>Nombre de points: <span></span></h2>
+
+        <button onclick="changeBackgroundButton()" id="travel">Voyage</button>
+      </div>
+      <div class="container">
         <div class="rocket">
-            <img src="img/fusee.png" alt="Picture of a rocket">
-            <span class="added-one">+1</span>
+          <img src="img/fusee.png" alt="Picture of a rocket" />
+          <span class="added-one">+1</span>
         </div>
-    <section class="sliding_menu">
-        <button class="slidingButton"> < </button>
+        <div class="content">
+          <section class="slidingButton">
+            <button class="mulitplicator"><</button>
 
-        <div class="multiplicator">
-            <button class="close">X</button>
-            <ul>Multiplicateurs</ul>
-            <div class="menu">
-                <button class="earth"><img src="img/terre.png" alt=""> <li>Terre</li></button>
-                <button class="mars"><img src="img/mars.png" alt=""> <li>Mars</li></button>
-                <button class="jupiter"><img src="img/jupiter.png" alt=""> <li>Jupiter</li></button>
-                <button class="saturne"><img src="img/saturne.png" alt=""> <li>Saturne</li></button>
-                <button class="uranus"><img src="img/uranus.png" alt=""> <li>Uranus</li></button>
-                <button class="neptune"><img src="img/neptune.png" alt=""> <li>Neptune</li></button>
-                <button class="js"><img src="img/js.png" alt=""> <li>JS</li></button>
+            <div class="multiplicator">
+              <button class="close">X</button>
+              <ul>
+                Multiplicateurs
+              </ul>
+              <div class="menu">
+                <button class="earth">
+                  <img src="img/terre.png" alt="" />
+                  <li>Terre</li>
+                </button>
+                <button class="mars">
+                  <img src="img/mars.png" alt="" />
+                  <li>Mars</li>
+                </button>
+                <button class="jupiter">
+                  <img src="img/jupiter.png" alt="" />
+                  <li>Jupiter</li>
+                </button>
+                <button class="saturne">
+                  <img src="img/saturne.png" alt="" />
+                  <li>Saturne</li>
+                </button>
+                <button class="uranus">
+                  <img src="img/uranus.png" alt="" />
+                  <li>Uranus</li>
+                </button>
+                <button class="neptune">
+                  <img src="img/neptune.png" alt="" />
+                  <li>Neptune</li>
+                </button>
+                <button class="js">
+                  <img src="img/js.png" alt="" />
+                  <li>JS</li>
+                </button>
+              </div>
             </div>
+          </section>
         </div>
+      </div>
+
+      <div class="popup">
+        <p>Votre Pseudo</p>
+        <input type="text" name="login" id="login" />
+        <button class="btn">OK</button>
+      </div>
+      <div class="popup-tutorial">
+        <p>
+          -Cliquez sur la fusée pour gagner des points. <br />
+          -Accumulez des points pour débloquer de nouvelles planètes. <br />
+          -Continuez votre voyage spatial à travers un univers en expansion !
+        </p>
+        <span id="close">&times; </span>
+      </div>
     </section>
-        <div class="popup">
-           
-            <p> Votre Pseudo</p>
-            <input type="text" name="login" id="login">
-            <button class="btn">OK</button>
+    <!-- PREMIERE BULLE + PERSONNAGE -->
+    <div class="Megamaster">
+      <section class="team-jspace">
+        <div class="team">
+          <h1 class="title">La Team JSpace</h1>
         </div>
-        <div class="popup-tutorial">
-            <p>
-                -Cliquez sur la fusée pour gagner des points. <br>
-                -Accumulez des points pour débloquer de nouvelles planètes. <br>
-                -Continuez votre voyage spatial à travers un univers en expansion !
-            </p>
+        <div class="team-container">
+          <article>
+            <div class="bubble-container">
+              <img
+                src="./img/Dialog Balloon.png"
+                height="200rem"
+                width="400rem"
+                alt="Dialog Bubble"
+                class="bubble-image"
+              />
+              <p class="bubble-text">
+                Salut, moi C'est Lucinda,<br />étudiante à la WCS
+              </p>
+            </div>
+
+            <div class="perso1">
+              <div class="perso lucinda">
+                <img
+                  src="./img/lucinda_astro.png"
+                  alt="lucinda"
+                  class="lucinda"
+                  height="170rem"
+                  width="170rem"
+                />
+                <p class="lulu"><span>Lucinda</span></p>
+              </div>
+            </div>
+          </article>
+
+          <!-- DEUXIEME BULLE + PERSONNAGE -->
+          <article>
+            <div class="bubble-container2">
+              <img
+                src="./img/Dialog Balloon.png"
+                height="200rem"
+                width="400rem"
+                alt="Dialog Bubble"
+                class="bubble-image"
+              />
+              <p class="bubble-text2">
+                Salut, moi C'est Julien,<br />
+                étudiante à la WCS
+              </p>
+            </div>
+
+            <div class="perso2">
+              <div class="perso julien">
+                <img
+                  src="./img/julien_astro.png"
+                  alt="julien"
+                  class="julien"
+                  height="165rem"
+                  width="170rem"
+                />
+                <p class="juju"><span>Julien</span></p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TROISIEME BULLE + PERSONNAGE -->
+          <article>
+            <div class="bubble-container3">
+              <img
+                src="./img/Dialog Balloon.png"
+                height="200rem"
+                width="400rem"
+                alt="Dialog Bubble"
+                class="bubble-image"
+              />
+              <p class="bubble-text3">
+                Salut, moi C'est Vincent, <br />étudiante à la WCS
+              </p>
+            </div>
+
+            <div class="perso3">
+              <div class="perso vincent">
+                <img
+                  src="./img/vincent_astro.png"
+                  alt="vincent"
+                  class="vincent"
+                  height="195rem"
+                  width="180rem"
+                />
+                <p class="vinvin"><span>Vincent</span></p>
+              </div>
+            </div>
+          </article>
+
+          <!-- /* QUATRIEME BULLE + PERSONNAGE */  -->
+
+          <article>
+            <div class="bubble-container4">
+              <img
+                src="./img/Dialog Balloon.png"
+                height="200rem"
+                width="400rem"
+                alt="Dialog Bubble"
+                class="bubble-image"
+              />
+              <p class="bubble-text4">
+                Salut, moi C'est Serigne, <br />étudiante à la WCS
+              </p>
+            </div>
+
+            <div class="perso4">
+              <div class="perso serigne">
+                <img
+                  src="./img/serigne_astro.png"
+                  alt="serigne"
+                  class="serigne"
+                  height="170rem"
+                  width="170rem"
+                />
+                <p class="sese"><span>Serigne</span></p>
+              </div>
+            </div>
+          </article>
         </div>
-        
-    </section>
-     <!-- PREMIERE BULLE + PERSONNAGE -->
-     <div class="Megamaster"><section class="team-jspace">
-        <div class="team"><h1 class="titre">La Team JSpace<h1></h1></div>
-
-        
-        <div class="bubble-container">
-            <img src="./img/Dialog Balloon.png" height="200rem" width="400rem" alt="Dialog Bubble" class="bubble-image">
-            <p class="bubble-text">Salut, moi C'est Lucinda, étudiante à la WCS</p>
-        </div>
-
-        <div class="perso1">
-        <div class="lucinda"><img src="./img/lucinda_astro.png" alt="lucinda" class="lucinda" height=170rem" width="170rem">
-        <p class="lulu"><span>Lucinda</span></p></div> 
-    
-</div>
-
-
-<!-- DEUXIEME BULLE + PERSONNAGE -->
-    
-    <div class="bubble-container2">
-        <img src="./img/Dialog Balloon.png" height="200rem" width="400rem" alt="Dialog Bubble" class="bubble-image">
-        <p class="bubble-text2">Salut, moi C'est Julien, étudiante à la WCS</p>
+      </section>
     </div>
-
-    <div class="perso2">
-    <div class="julien"><img src="./img/julien_astro.png" alt="julien" class="julien" height=165rem" width="170rem">
-    <p class="juju"><span>Julien</span></p></div> 
-
-
-<!-- TROISIEME BULLE + PERSONNAGE -->
-        
-        <div class="bubble-container3">
-            <img src="./img/Dialog Balloon.png" height="200rem" width="400rem" alt="Dialog Bubble" class="bubble-image">
-            <p class="bubble-text3">Salut, moi C'est Vincent, étudiante à la WCS</p>
-        </div>
-
-        <div class="perso3">
-        <div class="vincent"><img src="./img/vincent_astro.png" alt="vincent" class="vincent" height=195rem" width="180rem">
-        <p class="vinvin"><span>Vincent</span></p></div> 
-   
-
-    <!-- /* QUATRIEME BULLE + PERSONNAGE */  -->
-    
-    <div class="bubble-container4">
-        <img src="./img/Dialog Balloon.png" height="200rem" width="400rem" alt="Dialog Bubble" class="bubble-image">
-        <p class="bubble-text4">Salut, moi C'est Serigne, étudiante à la WCS</p>
-    </div>
-
-    <div class="perso4">
-    <div class="serigne"><img src="./img/serigne_astro.png" alt="serigne" class="serigne" height=170rem" width="170rem">
-    <p class="sese"><span>Serigne</span></p></div> 
-    
-    </div>
-        
-    </section>
-
     <footer>
-        <img src="" alt="Black rocket"> Team &copy JSpace wilder-2023
+      <img src="img/logo.png" alt="Black rocket" /> Team JSpace wilder-2023
     </footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

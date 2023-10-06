@@ -21,7 +21,7 @@ pseudo.addEventListener("click", () => {
   popup.style.visibility = "visible";
 });
 
-// nombre de clique sur la fusée.
+// nombre de clique sur la fusÃ©e.
 const addedOne = document.querySelector(".added-one");
 
 const rocket = document.querySelector(".rocket img");
@@ -52,11 +52,11 @@ const menu = document.querySelector(".multiplicator")
 const close = document.querySelector(".close")
 
 open.addEventListener('click', () => {
-    document.querySelector(".multiplicator").style.marginLeft = "-12px";
+    document.querySelector(".multiplicator").style.marginLeft = "-12rem";
 });
 
 close.addEventListener("click", () => {
-  document.querySelector(".multiplicator").style.marginLeft = "120px";
+  document.querySelector(".multiplicator").style.marginLeft = "12rem";
 });
 
 //const body= document.querySelector("body");
