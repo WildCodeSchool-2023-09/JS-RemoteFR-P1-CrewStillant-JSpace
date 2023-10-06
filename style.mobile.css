@@ -170,6 +170,11 @@ section h1 {
     border: none;
     opacity: 0.2;
 }
+.content{
+  width:100%;
+  height:100%;
+}
+
 .multiplicator{
   transition: margin-left 1s;
   background-color: #0273C5;
@@ -338,6 +343,7 @@ ul {
   justify-content: center;
   margin-top: 0rem;
   margin-left: 2rem;
+  color: white;
 
 }
 
@@ -376,27 +382,31 @@ ul {
 
 .sese{
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-left: 0rem;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: -27rem;
+    color: white;
 
 }
 
 .perso4{
-  position: absolute;
-  display: flex;
   justify-content: end;
-  align-items: end;
-  top: 26rem;
-  left: -34rem;
+    align-items: end;
+    top: 32rem;
+    left: -30rem;
+    position: static;
+    margin-left: -8%;
+    margin-top: -1%;
 }
 
 
 .bubble-container4{
   position: relative;
-  right: 46rem;
-  top: 14rem;
-  transform: scaleX(-1);
+    top: 9rem;
+    right: -4%;
+    transform: scaleX(-1);
+    margin-top: 2%;
+    bottom: 5%;
 
 }
 
