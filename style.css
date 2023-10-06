@@ -271,9 +271,9 @@ article{
   position: relative;
   margin-right: -8rem;
 }
-.bubble-container img{
-  /* width: 50rem; */
-}
+
+
+
 .bubble-container p{
   position: absolute;
   color: var(--background-color);

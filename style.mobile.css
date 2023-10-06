@@ -222,11 +222,11 @@ ul {
   position: relative;
   display: flex;
   height: 115rem;
-  width: 50rem;
   background-color: black;
   background-image: url('./img/background_bas.png');
   background-size: cover;  /* pour couvrir toute la zone de l'élément */
   background-repeat: no-repeat; 
+  overflow:hidden;
 }
 
 .team-jspace {
@@ -427,11 +427,12 @@ ul {
 
 
 footer {
-  position: fixed;
-  bottom: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
   width: 100%;
   color: var(--policy-color);
-  background-color: purple;
+  background-color:#35155d;
   
 }
 
