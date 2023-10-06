@@ -429,8 +429,10 @@ footer {
   bottom: 0;
   width: 100%;
   color: var(--policy-color);
-  background-color: purple;
-  
+  background-color:#35155d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blink {
