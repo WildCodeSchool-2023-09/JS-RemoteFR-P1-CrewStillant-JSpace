@@ -147,7 +147,7 @@ section h1 {
 }
 .rocket span {
   position: absolute;
-  top: 38%;
+  top: 45%;
   left: 50%;
   visibility: hidden;
   color: #35155d;
@@ -179,7 +179,7 @@ section h1 {
 
 .multiplicator{
   transition: margin-left 1s;
-  background-color: #0273C5;
+  background-color:#35155d;
   color: var(--policy-color);
   position: absolute;
   top: 15%;
@@ -209,6 +209,9 @@ section h1 {
     width: 10rem;
     background-color: #0273C5 ;
 }
+.menu button{
+  background-color: #35155d;
+}
 .multiplicator img {
   width: 3rem;
 }
@@ -222,11 +225,11 @@ ul {
   position: relative;
   display: flex;
   height: 115rem;
-  width: 50rem;
   background-color: black;
   background-image: url('./img/background_bas.png');
   background-size: cover;  /* pour couvrir toute la zone de l'élément */
   background-repeat: no-repeat; 
+  overflow: hidden;
 }
 
 .team-jspace {
@@ -423,12 +426,8 @@ ul {
 
 }
 
-
-
-
 footer {
-  position: fixed;
-  bottom: 0;
+  
   width: 100%;
   color: var(--policy-color);
   background-color:#35155d;

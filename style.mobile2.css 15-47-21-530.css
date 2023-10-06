@@ -211,7 +211,9 @@
     display: flex;
     align-items: center;
   }
-  
+  .multiplicator-bis{
+    background-color: #35155d;
+  }
   
   .Megamaster{
     position: relative;

@@ -38,11 +38,14 @@ rocket.addEventListener("click", () => {
 });
 
 // clique sur didacticiel
-
+const closeTutorial=document.querySelector("#close");
+closeTutorial.addEventListener("click", ()=>{
+  popuptutorial.style.visibility="hidden";
+})
 const popuptutorial=document.querySelector(".popup-tutorial");
 const buttontutorial= document.querySelector(".tutorial");
 buttontutorial.addEventListener("click", ()=>{
-popuptutorial.classList.toggle("displayPopup");
+popuptutorial.style.visibility="visible";
 }) 
 
 //Multi
