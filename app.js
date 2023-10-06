@@ -43,19 +43,20 @@ const popuptutorial=document.querySelector(".popup-tutorial");
 const buttontutorial= document.querySelector(".tutorial");
 buttontutorial.addEventListener("click", ()=>{
 popuptutorial.classList.toggle("displayPopup");
- 
+}) 
+
 //Multi
-})
+
 const open = document.querySelector(".slidingButton")
 const menu = document.querySelector(".multiplicator")
 const close = document.querySelector(".close")
 
 open.addEventListener('click', () => {
-    document.querySelector(".multiplicator").style.display = "block";
+    document.querySelector(".multiplicator").style.marginLeft = "-12px";
 });
 
 close.addEventListener("click", () => {
-  document.querySelector(".multiplicator").style.display = "none";
+  document.querySelector(".multiplicator").style.marginLeft = "120px";
 });
 
 //const body= document.querySelector("body");
@@ -75,6 +76,7 @@ let backgroundPlanete = [
 let clickCount = 0;
 let changePlanete = [10, 20, 30, 40, 50, 60, 70];
 
+let currentBackgroundIndex = 0;
 const voyageButton = document.getElementById("travel");
 
 voyageButton.addEventListener("click", () => {
@@ -83,22 +85,16 @@ voyageButton.addEventListener("click", () => {
 });
 
 function changeBackgroundButton() {
-  if (changePlanete.includes(clickCount)) {
-    document.getElementById("background-image").style.backgroundImage = backgroundPlanete[changePlanete.indexOf(clickCount)];
-  }
+    document.getElementById("background-image").style.backgroundImage = backgroundPlanete[currentBackgroundIndex];
+    voyageButton.className = "";
 }
 
 //Faire clignoter le bouton "voyage"
 
-function clignButton() {
-  setInterval( function () { 
-    voyageButton.style.visibility = (voyageButton.style.visibility=='visible')?'hidden':'visible';
-  },677)
-}
-
 rocket.addEventListener("click", () => {
   clickCount++;
-  if (count === changePlanete[0]) {
-    clignButton ()
+  if (changePlanete.includes(clickCount)) {
+    voyageButton.className = "blink"
+    currentBackgroundIndex = changePlanete.indexOf(clickCount)
   }
 });  
