@@ -65,6 +65,10 @@ open.addEventListener('click', () => {
     document.querySelector(".multiplicator").style.display = "block";
 });
 
+close.addEventListener("click", () => {
+    document.querySelector(".multiplicator").style.display = "none";
+});
+
 // const body= document.querySelector("body");
 // body.addEventListener("click", ()=>{
 // popuptutorial.style.visibility="hidden"
@@ -116,6 +120,4 @@ function changeBackgroundButton() {
     }
 }
 
-close.addEventListener("click", () => {
-    document.querySelector(".multiplicator").style.display = "none";
-});
+
